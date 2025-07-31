@@ -1,6 +1,10 @@
 # IP Info API
 
 Detail information of the IP addresses you entered and your IP address
+## Tech Stacks:
+* Spring Boot, Java
+* OpenAPI Swagger for API Documentation
+* MaxMind's Geolite's ASN, Country and City Database
 
 ## Endpoints:
 
