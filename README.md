@@ -16,6 +16,7 @@ Response:
 http://localhost:8080/api/ipinfo?ip=[YOUR_IP_ADDRESS]
 
 Response:
+```JSON
 {
   "ip": "37.111.53.252",
   "region": null,
