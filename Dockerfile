@@ -1,11 +1,11 @@
-# ---- Build stage ----
-FROM maven:3.9.6-eclipse-temurin-21-alpine AS build
+# Build Stage
+FROM maven:3.9.11-amazoncorretto-24-al2023 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# ---- Run stage ----
-FROM eclipse-temurin:21-jre-alpine
+# Runtime Stage
+FROM openjdk:24-oraclelinux8
 WORKDIR /app
 COPY --from=build /app/target/archer_ipinfo-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
