@@ -7,6 +7,6 @@ RUN mvn clean package -DskipTests
 # Runtime Stage
 FROM openjdk:24-oraclelinux8
 WORKDIR /app
-COPY --from=build /app/target/archer_ipinfo-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/ipinfo-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
