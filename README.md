@@ -8,9 +8,11 @@ Detail information of the IP addresses you entered and your IP address
 http://localhost:8080/myip?format=json
 
 Response:
+```JSON
 {
   "ip": "37.111.53.252"
 }
+```
 
 > IP Address Information
 http://localhost:8080/api/ipinfo?ip=[YOUR_IP_ADDRESS]
@@ -48,6 +50,7 @@ Response:
     "prefixLength": 23
   }
 }
+```
 
 > Your IP Address in String
 http://localhost:8080
